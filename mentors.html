@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+	<meta class="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<title>Authentication @Evie</title>
+	<link rel='stylesheet' href='css/style.min.css' />
+</head>
+<body>
+	<!-- navbar -->
+	<div class="navbar">
+		<nav class="nav__mobile"></nav>
+		<div class="container">
+			<div class="navbar__inner">
+				<a href="#" class="navbar__logo">Ashesi Mentorship Program</a>
+				<nav class="navbar__menu">
+					<ul>
+						<li><a href="#">Be a mentor</a></li>
+						<li><a href="#">Get a mentor</a></li>
+					</ul>
+				</nav>
+				<div class="navbar__menu-mob"><a href="" id='toggle'><svg role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z" class=""></path></svg></a></div>
+			</div>
+		</div>
+	</div>
+	<!-- Authentication pages -->
+	<div class="auth">
+			<form method='post' action="/example" role="presentation" class="form" style="margin-bottom:50px;">
+	
+				<div class="container">
+					<div class="auth__inner">
+						
+						<div class="auth__auth">
+								<h1 class="auth__title">Mentors signup form</h1>
+								<h4>Personal Information</h4>
+								<p>This section is to request for your personal information</p>
+								<label>First name</label>
+								<input type="text" name="first_name"  placeholder="First name">
+	
+								<label>Middle name</label>
+								<input type="text" name="middle_name" placeholder="Middle name">
+	
+								<label>Last name</label>
+								<input type="text" name="last_name" placeholder="Last name">
+	
+								<label>Email</label>
+								<input type="email" name="email" placeholder="you@example.com">
+	
+								
+								<div id="rowInput" style="display:flex;">
+								<div>
+								<label>Phone number</label>
+								<input type="text" name="telephone" placeholder="Phone number" style="margin-right: 1px;">
+								</div>
+								<div>
+									<label>Gender</label>
+									<select name="gender"  style="width:200%; margin-left: 10px">
+										<option value="male"> Male</option>
+										<option value="female">Female</option>
+									</select>	
+								</div>
+								</div>
+								
+							
+						</div>
+						<div class="auth__media">
+								<img src="./images/undraw_winter_designer_a2m7.svg">
+							</div>
+					</div>
+				</div>
+				<div class="container">
+					<div class="auth__inner">
+						
+						<div class="auth__auth">
+							<h4>Professional Background</h4>
+							<p>This section requires you to give some information about your profession</p>
+
+								<label>Name of Company/Organization</label>
+								<input type="text" name="company">
+								<label>Current Role</label>
+								<input type="text" name="role">
+								<h4><b>Please type a summary of your professional Biography or upload a file below</b></h4>
+								<label>Professional Biography</label>
+								<textarea placeholder="Your bio goes here..."></textarea>
+								<label>Professional Biography file</label>
+								<input type="file" name="bio_file">
+								
+							
+						</div>
+						<div class="auth__media">
+								<img src="./images/undraw_designer_kcp7.svg">
+						</div>
+					</div>
+				</div>
+				<div class="container">
+						<div class="auth__inner">
+							<div class="auth__media">
+								<img src="./images/undraw_choice_9385.svg">
+							</div>
+							<div class="auth__auth">
+							<h4 style="margin-top:100px">Mentoring Interest</h4>
+							<p>I would like to mentor a student whose interest is in..</p>
+							<label>1st choice </label>
+							<select name="interest1" required="">
+								
+									<option value="Banking/Financial Services">Banking/Financial Services</option>
+								
+									<option value="Engineering">Engineering</option>
+								
+									<option value="Marketing/Advertising">Marketing/Advertising</option>
+								
+									<option value="Entrepreneurship">Entrepreneurship</option>
+								
+									<option value="software development">software development</option>
+								
+									<option value="Charity &amp; Social Work">Charity &amp; Social Work</option>
+								
+									<option value="Education/Teaching">Education/Teaching</option>
+								
+									<option value="Human resources">Human resources</option>
+								
+									<option value="Media">Media</option>
+								
+									<option value="Journalism / Communication Studies">Journalism / Communication Studies</option>
+								
+									<option value="Technology">Technology</option>
+								
+									<option value="Design and Innovation">Design and Innovation</option>
+								
+									<option value="Music(especially vocals) and Art">Music(especially vocals) and Art</option>
+								
+								</select>
+							<label>2nd choice </label>
+							<select name="interest1" required="" >
+								
+									<option value="Banking/Financial Services">Banking/Financial Services</option>
+								
+									<option value="Engineering">Engineering</option>
+								
+									<option value="Marketing/Advertising">Marketing/Advertising</option>
+								
+									<option value="Entrepreneurship">Entrepreneurship</option>
+								
+									<option value="software development">software development</option>
+								
+									<option value="Charity &amp; Social Work">Charity &amp; Social Work</option>
+								
+									<option value="Education/Teaching">Education/Teaching</option>
+								
+									<option value="Human resources">Human resources</option>
+								
+									<option value="Media">Media</option>
+								
+									<option value="Journalism / Communication Studies">Journalism / Communication Studies</option>
+								
+									<option value="Technology">Technology</option>
+								
+									<option value="Design and Innovation">Design and Innovation</option>
+								
+									<option value="Music(especially vocals) and Art">Music(especially vocals) and Art</option>
+								
+								</select>
+							<label>3rd choice </label>
+							<select name="interest1" required="" >
+								
+									<option value="Banking/Financial Services">Banking/Financial Services</option>
+								
+									<option value="Engineering">Engineering</option>
+								
+									<option value="Marketing/Advertising">Marketing/Advertising</option>
+								
+									<option value="Entrepreneurship">Entrepreneurship</option>
+								
+									<option value="software development">software development</option>
+								
+									<option value="Charity &amp; Social Work">Charity &amp; Social Work</option>
+								
+									<option value="Education/Teaching">Education/Teaching</option>
+								
+									<option value="Human resources">Human resources</option>
+								
+									<option value="Media">Media</option>
+								
+									<option value="Journalism / Communication Studies">Journalism / Communication Studies</option>
+								
+									<option value="Technology">Technology</option>
+								
+									<option value="Design and Innovation">Design and Innovation</option>
+								
+									<option value="Music(especially vocals) and Art">Music(especially vocals) and Art</option>
+								
+								</select>
+							<label>4th choice </label>
+							<select name="interest1" required="" id="id_interest1">
+								
+									<option value="Banking/Financial Services">Banking/Financial Services</option>
+								
+									<option value="Engineering">Engineering</option>
+								
+									<option value="Marketing/Advertising">Marketing/Advertising</option>
+								
+									<option value="Entrepreneurship">Entrepreneurship</option>
+								
+									<option value="software development">software development</option>
+								
+									<option value="Charity &amp; Social Work">Charity &amp; Social Work</option>
+								
+									<option value="Education/Teaching">Education/Teaching</option>
+								
+									<option value="Human resources">Human resources</option>
+								
+									<option value="Media">Media</option>
+								
+									<option value="Journalism / Communication Studies">Journalism / Communication Studies</option>
+								
+									<option value="Technology">Technology</option>
+								
+									<option value="Design and Innovation">Design and Innovation</option>
+								
+									<option value="Music(especially vocals) and Art">Music(especially vocals) and Art</option>
+								
+							</select>
+	
+							<button type='submit' class="button button__accent">Submit</button>
+						</div>
+						
+							</div>
+				</div>
+				
+			</form>
+			
+		</div>
+<script src='js/app.min.js'></script>
+</body>
+</html>
